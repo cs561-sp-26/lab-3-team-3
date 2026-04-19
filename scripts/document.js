@@ -4,7 +4,12 @@
  * element.
  ************************************************************************/
 
-
+/*************************************************************************
+ * @function Document Keydown Event Handler 
+ * @desc 
+ * When the user presses a key in the app, we interpret the
+ * keypress based on which user interface element currently has focus. 
+ *************************************************************************/
 document.addEventListener("keydown", function(e) { 
     if (document.activeElement.id === "menuBtn") {
             //User is pressing a key when menu button is focused
