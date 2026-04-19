@@ -13,5 +13,9 @@ document.addEventListener("keydown", function(e) {
                === "menuitem") {
         //User is pressing a key when menu item is focused
         keyDownMenuItemFocused(e.code);
+    } else if (document.activeElement.getAttribute("role") 
+               === "tab") {
+        //User is pressing a key when mode tab is focused
+        keyDownModeTabFocused(e.code); 
     }
 });
