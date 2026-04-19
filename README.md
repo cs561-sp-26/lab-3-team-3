@@ -16,7 +16,7 @@
 | --------- | ----------- | ---------|----
 | Name 1 | 12 | 50 | 4.2
 | Name 2 | 8 | 20  | 2.5
-| Name 3 | 5 | 10 | 2
+| Adrien Protzel | 6 | 370 | 61.7
 | Name 4 | 3 | 5 | 1.67
 | Name 5 | 2 | 2  | 1
 | **Totals** | **30** | **87** | **2.9**
@@ -26,7 +26,7 @@
 | --------- | ----------- | ---------------
 | Name 1 | 2 | `feature/new-feature`
 | Name 2 | 1 | `feature/new-feature`
-| Name 3 | 1 | `feature/new-feature`
+| Adrien Protzel | 1 | `feature-action-dialog`
 | Name 4 | 0 | `feature/new-feature`
 | Name 5 | 0 | `feature/new-feature`
 
@@ -35,7 +35,7 @@
 | --------- | ----------- | ---------------
 | Name 1 | 2 | `feature/new-feature`
 | Name 2 | 1 | `feature/new-feature`
-| Name 3 | 1 | `feature/new-feature`
+| Adrien Protzel | 1 | `feature-action-dialog`
 | Name 4 | 0 | `feature/new-feature`
 | Name 5 | 0 | `feature/new-feature`
 
@@ -44,6 +44,6 @@
 | --------- | ----------- | ---------------
 | Name 1 | 2 | `feature/new-feature`
 | Name 2 | 1 | `feature/new-feature`
-| Name 3 | 1 | `feature/new-feature`
+| Adrien Protzel | 1 | `7af9b11 (Interactive-Components)`
 | Name 4 | 0 | `feature/new-feature`
 | Name 5 | 0 | `feature/new-feature`
