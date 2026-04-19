@@ -6,5 +6,8 @@
 
 
 document.addEventListener("keydown", function(e) { 
-
+    if (document.activeElement.id === "menuBtn") {
+            //User is pressing a key when menu button is focused
+            keyDownMenuBtnFocused(e.code); 
+    }
 });
