@@ -16,7 +16,7 @@
 | --------- | ----------- | ---------|----
 | Alex Bruzda | 0 | 0 | 0
 | Savannah Tanner | 4 | 6 | 1.5
-| Adrien Protzel | 0 | 0 | 0
+| Adrien Protzel | 3 | 70 | 50
 | Chris Somnitz | 0 | 0 | 0
 | Kyle Noble | 2 | 82  | 41
 | **Totals** | **30** | **87** | **2.9**
@@ -26,7 +26,7 @@
 | --------- | ----------- | ---------------
 | Alex Bruzda | 0 | `feature/new-feature`
 | Savannah Tanner | 1 | `feature/css-classes-for-mode-pages`
-| Adrien Protzel | 0 | `feature/new-feature`
+| Adrien Protzel | 3 | `feature/new-feature`
 | Chris Somnitz | 0 | `feature/new-feature`
 | Kyle Noble | 1 | `feature/mode-tabs-style`
 
