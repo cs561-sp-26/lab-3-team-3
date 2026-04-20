@@ -63,7 +63,7 @@ for (let i = 0; i < GlobalModeTabButtons.length; ++i) {
  * mode tab
  * @global currentMode: index (into modeTabButtons) of current mode
  *************************************************************************/
-function keyDownModeTabFocused(key) {
+ function keyDownModeTabFocused(key) {
     if (key =="Enter" || key =="Space") {
       //Switch to mode corresponding to tab with current focus
       switchMode(GlobalFocusedMode.get()); 
