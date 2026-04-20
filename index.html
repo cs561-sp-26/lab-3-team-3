@@ -1,198 +1,170 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- Title displays in page's tab.  -->
-    <title>SpeedScore</title>
-    <!-- Define Favicon -->
-    <link rel='shortcut icon' type='image/x-icon' 
-          href="images/ssfavicon.ico"/>
-    <!--Specify viewable part of page ('viewport'). -->
-    <meta name="viewport" content="width=device-width, 
+
+<head>
+  <!-- Title displays in page's tab.  -->
+  <title>SpeedScore</title>
+  <!-- Define Favicon -->
+  <link rel='shortcut icon' type='image/x-icon' href="images/ssfavicon.ico" />
+  <!--Specify viewable part of page ('viewport'). -->
+  <meta name="viewport" content="width=device-width, 
           initial-scale=1.0">
-     <!-- Enable app to open full screen on mobile devices-->
-     <meta name="mobile-web-app-capable" content="yes">
-     <!-- Import FontAwesome icons -->
-     <script src="https://kit.fontawesome.com/79d46ac19d.js" 
-      crossorigin="anonymous"></script>
-     <!-- Import local stylesheet -->
-     <link rel="stylesheet" href="styles/style.css">
-   </head>
-   <body>
-    <!-- The TOP NAVIGATION BAR -->
-    <header class="navbar"> 
-        <a id="sLink" class="skip-link" tabindex="0">Skip to content</a>  
-        <button id="menuBtn" type="button" class="navbar-btn" title="Menu"
-            aria-controls="sideMenu" aria-label="Actions"
-            aria-haspopup="true" aria-expanded="false">
-            <span id="menuBtnIcon" class="navbar-btn-icon fas fa-bars"></span>
-        </button>
-        <img src="images/sslogo.png" class="navbar-app-icon" 
-        alt="SpeedScore logo">
-        <h1 id="appName" class="navbar-title">SpeedScore</h1> 
-        <div class="navbar-right-items">
-            <button  id="searchBtn" type="button" class="navbar-btn" title="Search" 
-            aria-label="Search">
-            <span class="navbar-btn-icon fas fa-search"></span>
-            </button>
-            <button id="profileBtn" type="button" class="navbar-btn" title="Edit Profile"
-            aria-label="Account Settings">
-            <img class="navbar-profile-pic" 
-                src="images/ChrisProfilePic.jpg" alt="User's profile picture">
-            </button>  
-        </div>
-    </header>
+  <!-- Enable app to open full screen on mobile devices-->
+  <meta name="mobile-web-app-capable" content="yes">
+  <!-- Import FontAwesome icons -->
+  <script src="https://kit.fontawesome.com/79d46ac19d.js" crossorigin="anonymous"></script>
+  <!-- Import local stylesheet -->
+  <link rel="stylesheet" href="styles/style.css">
+</head>
 
-    <!--THE SIDE MENU -->
-
-    <!-- "MODE" TABS -->
-    <div id="modeTabs" class="modetab-container" role="tablist" 
-      aria-label="App Modes">
-      <button id="feedMode" type="button" 
-        class="modetab-btn modetab-selected" 
-        role="tab" tabindex="0" aria-selected="true" 
-        aria-controls="feedModeMain">
-        Feed
+<body>
+  <!-- The TOP NAVIGATION BAR -->
+  <header class="navbar">
+    <a id="sLink" class="skip-link" tabindex="0">Skip to content</a>
+    <button id="menuBtn" type="button" class="navbar-btn" title="Menu" aria-controls="sideMenu" aria-label="Actions"
+      aria-haspopup="true" aria-expanded="false">
+      <span id="menuBtnIcon" class="navbar-btn-icon fas fa-bars"></span>
+    </button>
+    <img src="images/sslogo.png" class="navbar-app-icon" alt="SpeedScore logo">
+    <h1 id="appName" class="navbar-title">SpeedScore</h1>
+    <div class="navbar-right-items">
+      <button id="searchBtn" type="button" class="navbar-btn" title="Search" aria-label="Search">
+        <span class="navbar-btn-icon fas fa-search"></span>
       </button>
-      <button id="roundsMode" type="button" 
-        class="modetab-btn" 
-        role="tab" tabindex="-1" aria-selected="false" 
-        aria-controls="roundsModeMain">
-        Rounds
-      </button>
-      <button id="coursesMode" type="button" 
-        class="modetab-btn" 
-        role="tab" tabindex="-1" aria-selected="false" 
-        aria-controls="coursesModeMain">
-        Courses
-      </button>
-      <button id="buddiesMode" type="button" 
-        class="modetab-btn" 
-        role="tab" tabindex="-1" aria-selected="false" 
-        aria-controls="buddiesModeMain">
-        Buddies
+      <button id="profileBtn" type="button" class="navbar-btn" title="Edit Profile" aria-label="Account Settings">
+        <img class="navbar-profile-pic" src="images/ChrisProfilePic.jpg" alt="User's profile picture">
       </button>
     </div>
-    <main>
-      <div id="feedModeTab" class="mode-page" role="tabpanel"
-        aria-label="Feed Tab" tabindex="0">
-        <h1 class="mode-page-header">Activity Feed</h1>
-        <p class="mode-page-content">This page is under construction.</p>
-        <img class="mode-page-icon" 
-              src="images/sslogo2.png" alt="SpeedScore logo">
-        <button id="feedModeActionBtn"  type="button" 
-                 class="float-btn">
-          <span class="fas fa-comment-medical fa-fw" aria-hidden="true"></span>New Post
-        </button>
-      </div>
-      <div id="roundsModeTab" class="mode-page hidden" role="tabpanel"
-           aria-label="Rounds Tab" tabindex="0">
-        <h1 class="mode-page-header">Rounds</h1>
-        <p class="mode-page-content">This page is under construction.</p>
-        <img class="mode-page-icon" src="images/sslogo2.png" alt="SpeedScore logo">
-        <button id="roundsModeActionBtn"  type="button" 
-                class="float-btn">
-          <span class="fas fa-calendar-plus fa-fw" aria-hidden="true"></span>New Round
-        </button>
-      </div>
-      <div id="coursesModeTab" role="tabpanel" class="mode-page hidden" 
-           aria-label="Courses Tab" tabindex="0">
-        <h1 class="mode-page-header">Courses</h1>
-        <p class="mode-page-content">This page is under construction.</p>
-        <img class="mode-page-icon" src="images/sslogo2.png" alt="SpeedScore logo">
-        <button id="coursesModeActionBtn"  type="button" 
-                class="float-btn">
-          <span class="fas fa-plus fa-fw" aria-hidden="true"></span>New Course
-        </button>
-      </div>
-      <div id="buddiesModeTab" role="tabpanel" class="mode-page hidden" 
-           aria-label="Buddies Tab" tabindex="0">
-        <h1 class="mode-page-header">Buddies</h1>
-        <p class="mode-page-content">This page is under construction.</p>
-        <img class="mode-page-icon" src="images/sslogo2.png" alt="SpeedScore logo">
-        <button id="roundsModeActionBtn"  type="button" 
-                class="float-btn">
-          <span class="fas fa-search fa-fw" aria-hidden="true"></span>Find Buddies
-        </button>
-      </div>
-      <div id="feedModeDialog" 
-            class="mode-page action-dialog hidden" role="dialog" 
-        aria-modal="true" aria-labelledby="newPostHeader" tabindex="0">
-        <h1 id="newPostHeader" class="mode-page-header">New Post</h1>
-        <p class="mode-page-content">
-          This modal dialog is under construction.
-        </p>
-        <img class="mode-page-icon" src="images/sslogo2.png" 
-            alt="SpeedScore logo">
-        <div class="mode-page-btn-container">
-          <button id="feedModeActionBtn" 
-                  class="mode-page-btn action-dialog action-button" 
-                  type="button">Post to Feed</button>
-          <button id="feedModePostCancelBtn" 
-                  class="mode-page-btn action-dialog cancel-button"
-                  type="button">Cancel</button>
-        </div>
-      </div> 
-      <div id="roundsModeDialog" 
-            class="mode-page action-dialog hidden" role="dialog" 
-        aria-modal="true" aria-labelledby="postRoundHeader" tabindex="0">
-        <h1 id="postRoundHeader" class="mode-page-header">Post Round</h1>
-        <p class="mode-page-content">
-          This modal dialog is under construction.
-        </p>
-        <img class="mode-page-icon" src="images/sslogo2.png" 
-            alt="SpeedScore logo">
-        <div class="mode-page-btn-container">
-          <button id="roundsModeActionBtn" 
-                  class="mode-page-btn action-dialog action-button" 
-                  type="button">Post Round</button>
-          <button id="roundsModeCancelBtn" 
-                  class="mode-page-btn action-dialog cancel-button"
-                  type="button">Cancel</button>
-        </div>
-      </div> 
-      <div id="coursesModeDialog" 
-            class="mode-page action-dialog hidden" role="dialog" 
-        aria-modal="true" aria-labelledby="newCourseHeader" tabindex="0">
-        <h1 id="addCourseHeader" class="mode-page-header">Add Course</h1>
-        <p class="mode-page-content">
-          This modal dialog is under construction.
-        </p>
-        <img class="mode-page-icon" src="images/sslogo2.png" 
-            alt="SpeedScore logo">
-        <div class="mode-page-btn-container">
-          <button id="coursesModeActionBtn" 
-                  class="mode-page-btn action-dialog action-button" 
-                  type="button">Add Course</button>
-          <button id="coursesModeCancelBtn" 
-                  class="mode-page-btn action-dialog cancel-button"
-                  type="button">Cancel</button>
-        </div>
-      </div> 
-      <div id="buddiesModeDialog" 
-            class="mode-page action-dialog hidden" role="dialog" 
-        aria-modal="true" aria-labelledby="findBuddiesHeader" tabindex="0">
-        <h1 id="findBuddiesHeader" class="mode-page-header">Find Buddies</h1>
-        <p class="mode-page-content">
-          This modal dialog is under construction.
-        </p>
-        <img class="mode-page-icon" src="images/sslogo2.png" 
-            alt="SpeedScore logo">
-        <div class="mode-page-btn-container">
-          <button id="buddiesModeActionBtn" 
-                  class="mode-page-btn action-dialog action-button" 
-                  type="button">Send Buddy Request</button>
-          <button id="buddiesModeCancelBtn" 
-                  class="mode-page-btn action-dialog cancel-button"
-                  type="button">Cancel</button>
-        </div>
-      </div> 
-    </main>
+  </header>
 
-    <script src="scripts/main.js"></script>
-    <script src="scripts/window.js"></script>
-    <script src="scripts/sideMenu.js"></script>
-    <script src="scripts/modeTabs.js"></script>
-    <script src="scripts/modeActions.js"></script>
-    <script src="scripts/document.js"></script>
-  </body>
+  <!--THE SIDE MENU -->
+  <ul id="sideMenu" role="menu" class="sidemenu" arial-labelledby="menuBtn">
+    <li role="menuitem" tabindex="-1">
+      Settings
+    </li>
+    <li role="menuitem" tabindex="-1">
+      About
+    </li>
+    <li role="menuitem" tabindex="-1">
+      Log Out
+    </li>
+  </ul>
+
+  <!-- "MODE" TABS -->
+  <div id="modeTabs" class="modetab-container" role="tablist" aria-label="App Modes">
+    <button id="feedMode" type="button" class="modetab-btn modetab-selected" role="tab" tabindex="0"
+      aria-selected="true" aria-controls="feedModeMain">
+      Feed
+    </button>
+    <button id="roundsMode" type="button" class="modetab-btn" role="tab" tabindex="-1" aria-selected="false"
+      aria-controls="roundsModeMain">
+      Rounds
+    </button>
+    <button id="coursesMode" type="button" class="modetab-btn" role="tab" tabindex="-1" aria-selected="false"
+      aria-controls="coursesModeMain">
+      Courses
+    </button>
+    <button id="buddiesMode" type="button" class="modetab-btn" role="tab" tabindex="-1" aria-selected="false"
+      aria-controls="buddiesModeMain">
+      Buddies
+    </button>
+  </div>
+  <main>
+    <div id="feedModeTab" class="mode-page" role="tabpanel" aria-label="Feed Tab" tabindex="0">
+      <h1 class="mode-page-header">Activity Feed</h1>
+      <p class="mode-page-content">This page is under construction.</p>
+      <img class="mode-page-icon" src="images/sslogo2.png" alt="SpeedScore logo">
+      <button id="feedModeActionBtn" type="button" class="float-btn">
+        <span class="fas fa-comment-medical fa-fw" aria-hidden="true"></span>New Post
+      </button>
+    </div>
+    <div id="roundsModeTab" class="mode-page hidden" role="tabpanel" aria-label="Rounds Tab" tabindex="0">
+      <h1 class="mode-page-header">Rounds</h1>
+      <p class="mode-page-content">This page is under construction.</p>
+      <img class="mode-page-icon" src="images/sslogo2.png" alt="SpeedScore logo">
+      <button id="roundsModeActionBtn" type="button" class="float-btn">
+        <span class="fas fa-calendar-plus fa-fw" aria-hidden="true"></span>New Round
+      </button>
+    </div>
+    <div id="coursesModeTab" role="tabpanel" class="mode-page hidden" aria-label="Courses Tab" tabindex="0">
+      <h1 class="mode-page-header">Courses</h1>
+      <p class="mode-page-content">This page is under construction.</p>
+      <img class="mode-page-icon" src="images/sslogo2.png" alt="SpeedScore logo">
+      <button id="coursesModeActionBtn" type="button" class="float-btn">
+        <span class="fas fa-plus fa-fw" aria-hidden="true"></span>New Course
+      </button>
+    </div>
+    <div id="buddiesModeTab" role="tabpanel" class="mode-page hidden" aria-label="Buddies Tab" tabindex="0">
+      <h1 class="mode-page-header">Buddies</h1>
+      <p class="mode-page-content">This page is under construction.</p>
+      <img class="mode-page-icon" src="images/sslogo2.png" alt="SpeedScore logo">
+      <button id="roundsModeActionBtn" type="button" class="float-btn">
+        <span class="fas fa-search fa-fw" aria-hidden="true"></span>Find Buddies
+      </button>
+    </div>
+    <div id="feedModeDialog" class="mode-page action-dialog hidden" role="dialog" aria-modal="true"
+      aria-labelledby="newPostHeader" tabindex="0">
+      <h1 id="newPostHeader" class="mode-page-header">New Post</h1>
+      <p class="mode-page-content">
+        This modal dialog is under construction.
+      </p>
+      <img class="mode-page-icon" src="images/sslogo2.png" alt="SpeedScore logo">
+      <div class="mode-page-btn-container">
+        <button id="feedModeActionBtn" class="mode-page-btn action-dialog action-button" type="button">Post to
+          Feed</button>
+        <button id="feedModePostCancelBtn" class="mode-page-btn action-dialog cancel-button"
+          type="button">Cancel</button>
+      </div>
+    </div>
+    <div id="roundsModeDialog" class="mode-page action-dialog hidden" role="dialog" aria-modal="true"
+      aria-labelledby="postRoundHeader" tabindex="0">
+      <h1 id="postRoundHeader" class="mode-page-header">Post Round</h1>
+      <p class="mode-page-content">
+        This modal dialog is under construction.
+      </p>
+      <img class="mode-page-icon" src="images/sslogo2.png" alt="SpeedScore logo">
+      <div class="mode-page-btn-container">
+        <button id="roundsModeActionBtn" class="mode-page-btn action-dialog action-button" type="button">Post
+          Round</button>
+        <button id="roundsModeCancelBtn" class="mode-page-btn action-dialog cancel-button" type="button">Cancel</button>
+      </div>
+    </div>
+    <div id="coursesModeDialog" class="mode-page action-dialog hidden" role="dialog" aria-modal="true"
+      aria-labelledby="newCourseHeader" tabindex="0">
+      <h1 id="addCourseHeader" class="mode-page-header">Add Course</h1>
+      <p class="mode-page-content">
+        This modal dialog is under construction.
+      </p>
+      <img class="mode-page-icon" src="images/sslogo2.png" alt="SpeedScore logo">
+      <div class="mode-page-btn-container">
+        <button id="coursesModeActionBtn" class="mode-page-btn action-dialog action-button" type="button">Add
+          Course</button>
+        <button id="coursesModeCancelBtn" class="mode-page-btn action-dialog cancel-button"
+          type="button">Cancel</button>
+      </div>
+    </div>
+    <div id="buddiesModeDialog" class="mode-page action-dialog hidden" role="dialog" aria-modal="true"
+      aria-labelledby="findBuddiesHeader" tabindex="0">
+      <h1 id="findBuddiesHeader" class="mode-page-header">Find Buddies</h1>
+      <p class="mode-page-content">
+        This modal dialog is under construction.
+      </p>
+      <img class="mode-page-icon" src="images/sslogo2.png" alt="SpeedScore logo">
+      <div class="mode-page-btn-container">
+        <button id="buddiesModeActionBtn" class="mode-page-btn action-dialog action-button" type="button">Send Buddy
+          Request</button>
+        <button id="buddiesModeCancelBtn" class="mode-page-btn action-dialog cancel-button"
+          type="button">Cancel</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="scripts/main.js"></script>
+  <script src="scripts/window.js"></script>
+  <script src="scripts/sideMenu.js"></script>
+  <script src="scripts/modeTabs.js"></script>
+  <script src="scripts/modeActions.js"></script>
+  <script src="scripts/document.js"></script>
+</body>
+
 </html>
