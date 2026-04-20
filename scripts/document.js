@@ -10,10 +10,10 @@
  * When the user presses a key in the app, we interpret the
  * keypress based on which user interface element currently has focus. 
  *************************************************************************/
-document.addEventListener("keydown", function(e) { 
+ document.addEventListener("keydown", function(e) { 
     if (document.activeElement.id === "menuBtn") {
-            //User is pressing a key when menu button is focused
-            keyDownMenuBtnFocused(e.code); 
+        //User is pressing a key when menu button is focused
+        keyDownMenuBtnFocused(e.code); 
     } else if (document.activeElement.getAttribute("role") 
                === "menuitem") {
         //User is pressing a key when menu item is focused
@@ -26,4 +26,4 @@ document.addEventListener("keydown", function(e) {
         .contains("action-dialog")) {
             keyDownDialogFocused(e);
     }
-});
+ });
