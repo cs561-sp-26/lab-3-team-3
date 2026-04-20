@@ -14,12 +14,12 @@
 
 | Name | # Commits | # Lines Changed | Avg. Lines/Commit
 | --------- | ----------- | ---------|----
-| Alex Bruzda | 6 | 414 | 69
+| Alex Bruzda | 10 | 427 | 42.7
 | Savannah Tanner | 15 | 145 | 9.7
 | Adrien Protzel | 14 | 135 | 9.64 |
 | Chris Somnitz | 14 | 139 | 9.93
 | Kyle Noble | 14 | 294 | 21
-| **Totals** | **41** | **1013** | **24.71**
+| **Totals** | **45** | **1026** | **22.8**
 
 ## Merge Conflicts Resolved
 | Name | # MCs Resolved | Merged Branch
