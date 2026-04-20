@@ -50,6 +50,19 @@ for (let i = 0; i < GlobalModeTabButtons.length; ++i) {
     GlobalModeTabButtons[i].addEventListener("click",() => switchMode(i));
 }
 
+/*************************************************************************
+ * @function keyDownModeTabFocused 
+ * @Desc 
+ * Handles valid keydown events when a mode tab button has the focus, 
+ * Left and Right Arrow change the focus to the previous and 
+ * next tab; Home and End change the focus to the first and last tab; 
+ * Enter or Space selects the currently focused tab.
+ * @param key: the string corresponding the key pressed
+ * @global modeTabButtons: array of HTML mode tab button elements
+ * @global focusedMode: index (into modeTabButtons) of currently focused
+ * mode tab
+ * @global currentMode: index (into modeTabButtons) of current mode
+ *************************************************************************/
 function keyDownModeTabFocused(key) {
     if (key =="Enter" || key =="Space") {
       //Switch to mode corresponding to tab with current focus
