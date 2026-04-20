@@ -59,5 +59,11 @@ function keyDownModeTabFocused(key) {
         GlobalFocusedMode.set((GlobalFocusedMode.get() + 1) % GlobalModeTabButtons.length); 
         GlobalModeTabButtons[GlobalFocusedMode.get()].setAttribute("tabindex","0");
         GlobalModeTabButtons[GlobalFocusedMode.get()].focus();  
+    }  else if (key == "ArrowLeft") { //shift focus to prev mode tab    
+        GlobalModeTabButtons[GlobalFocusedMode.get()].setAttribute("tabindex","-1");
+        GlobalFocusedMode.set((GlobalFocusedMode.get() - 1 + 
+            GlobalModeTabButtons.length) % GlobalModeTabButtons.length); 
+        GlobalModeTabButtons[GlobalFocusedMode.get()].setAttribute("tabindex","0");
+        GlobalModeTabButtons[GlobalFocusedMode.get()].focus(); 
     }
 }
