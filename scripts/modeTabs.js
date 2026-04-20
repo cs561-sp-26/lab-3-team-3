@@ -43,6 +43,16 @@
     }
 }
 
+/*************************************************************************  
+ * Bind switchMode() to each tab button's click handler.
+ *************************************************************************/
 for (let i = 0; i < GlobalModeTabButtons.length; ++i) {
     GlobalModeTabButtons[i].addEventListener("click",() => switchMode(i));
+}
+
+function keyDownModeTabFocused(key) {
+    if (key =="Enter" || key =="Space") {
+      //Switch to mode corresponding to tab with current focus
+      switchMode(GlobalFocusedMode.get()); 
+    }  
 }
