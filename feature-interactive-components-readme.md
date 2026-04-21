@@ -8,8 +8,9 @@ Added floating buttons to index and added css for buttons.
 
 ## Commits
 
-| Commit ID | Commit Message | # Lines Changed
-| --------- | ----------- | ---------------
-| 7af9b11 | added flt buttons and css | 66
+| Commit ID | Commit Message | # Lines Changed |
+| --------- | ----------- | --------------- |
+| 7af9b11 | added flt buttons and css | 66 |
+| 9563e44 | Added my name to README | 10 |
 
-### Total Commits Made in this Branch: 1
+### Total Commits Made in this Branch: 2
